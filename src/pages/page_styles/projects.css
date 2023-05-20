@@ -1,0 +1,69 @@
+.projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    flex-grow: 1; /* Add this line */
+    font-size: 7vw; /* Adjust the value as needed */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    animation: floatUp 2s forwards;
+    z-index: -1;
+}
+.proj-ele-beg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:2px solid gray;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    animation: floatUp 2s forwards;
+}
+.proj-ele{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border:2px solid gray;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+.proj_desc{
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: larger;
+}
+.proj_title{
+    transition: color 0.2s, transform 0.4s;
+    flex-grow: 1; /* Add this line */
+    font-size: 3vw; /* Adjust the value as needed */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+}
+.proj_title:hover{
+    transform: scale(1.05);
+    color: blue;
+}
+.proj{
+    max-width: 60%;
+    margin-bottom: 20px;
+    transition:transform .5S;
+    border-radius: 30px;
+
+}
+.proj:hover {
+    transform: scale(1.05);
+  }

@@ -20,7 +20,7 @@ header{
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
-
+  z-index: 10;
 }
 .link {
     margin: 0 1rem;

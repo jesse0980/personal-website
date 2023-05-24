@@ -1,0 +1,114 @@
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.con{
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width:100vw;
+        
+    
+}
+.contact-title{
+    flex-grow: 1; /* Add this line */
+    font-size: 7vw; /* Adjust the value as needed */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    animation: floatUp 2s forwards;
+    text-decoration: underline;
+}
+.thanks{
+    flex-grow: 1; /* Add this line */
+    font-size: 3vw; /* Adjust the value as needed */
+    margin-top: 70px;
+    margin-bottom: 0px;
+    animation: floatUp 4s forwards;
+}
+.pic-ele {
+    animation: floatUp 3s forwards;
+    margin-top: 20PX;
+    display: flex;
+    width: 95vw;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+ .con-logo{
+    cursor: pointer;
+    background-color: none;
+    border-radius: 5px;
+}
+.con p{
+    font-size: 2.3vh;
+    text-align: center;
+    margin-left: 3px;
+}
+.con-logo:hover{
+    color: red;
+    transition: .3s;
+}
+
+.link-ele-phone{
+    color:green;
+    background-color: none;
+    border-radius: 5px;
+}
+
+.link-ele-phone:hover{
+    color: red;
+    transition: .3s;
+}
+.final {
+    margin-top: 10PX;
+    margin-bottom: 40px;
+    max-width: 26%;
+    clip-path: circle();
+    height: auto;
+    width:auto;
+    opacity: 0;
+    animation: floatUp 4s forwards;
+    flex: 0 0 30%;
+    padding: 0px;
+    z-index: -1;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/* .link-ele-linked{
+    flex-grow: 1; /* Add this line 
+    font-size: 1vw;
+    margin-left: 60px;
+}
+.link-ele-phone{
+    flex-grow: 1; /* Add this line 
+    font-size: 1vw;
+    margin-left: -80px;
+} */
+/* .link-ele-linked{
+    font-size: .9vw;
+}
+.link-ele-phone{
+   position: relative;
+   top:43%;
+   left: -4%; 
+}
+.link-ele-email{
+    margin-left: 0px;
+} */

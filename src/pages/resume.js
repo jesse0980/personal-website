@@ -3,9 +3,10 @@ import "./page_styles/resume.css"
 const Resume = () => {
   return (
     <div className="Res">
-      <h1>JESSE LANDIS</h1>
-      <p>Gainesville, FL | (352)-562-2284 | jesse.landis@ufl.edu | <a href="https://www.linkedin.com/in/jesse-landis-b9aa4818a/">https://www.linkedin.com/in/jesse-landis-b9aa4818a/</a></p>
-
+      <div className='title-info'>
+        <h1>JESSE LANDIS</h1>
+        <p>Gainesville, FL | (352)-562-2284 | jesse.landis@ufl.edu | <a href="https://www.linkedin.com/in/jesse-landis-b9aa4818a/">https://www.linkedin.com/in/jesse-landis-b9aa4818a/</a></p>
+      </div>
       <h2>EDUCATION</h2>
       <p>University of Florida Gainesville, FL</p>
       <p>Bachelor of Arts in Economics, GPA: 3.71/4.0 May 2023</p>

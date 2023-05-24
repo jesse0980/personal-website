@@ -6,3 +6,24 @@
     height: 100vh;
 }
 
+.title-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+.title-info h1{
+    flex-grow: 1; /* Add this line */
+    font-size: 3vw; /* Adjust the value as needed */
+    animation: floatUp 2s forwards;
+    text-decoration: underline;
+}
+.title-info p{
+    flex-grow: 1; /* Add this line */
+    font-size: 1vw; /* Adjust the value as needed */
+    animation: floatUp 2s forwards;
+    margin-bottom: 10px;
+}

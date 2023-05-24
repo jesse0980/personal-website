@@ -3,33 +3,43 @@ import "./page_styles/about.css"
 import TypeWriterEffect from 'react-typewriter-effect';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import {useRef} from "react";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 export default function About() {
     useEffect(() => {
         AOS.init({duration: 2500});
         },
     []);
 
+    const navRef = useRef();
+
+
     return (
         <div>
         <div className="container">
             <img className = "headshot" src={require('../images/headshot.jpg')} alt="Headshot" />
             <div className="info">
-                <h1>Jesse Landis</h1>
+                <h1 className="this-title">Jesse Landis</h1>
                 
-            <span><TypeWriterEffect
+            <span className="type-write"><TypeWriterEffect
                 textStyle={{fontFamily: "Red Hat Display",
                             fontWeight: 500,
                             fontSize: "2em",
                 }}
                 startDelay={1500}
                 cursorColor="#ffff"
-                multiText={['I am an alum of the University of Florida who has a passion for Software Engineering and Economics']}
+                multiText={['I am a University of Florida graduate who has expertise in C++, Python, SQL, React, and Java. I have a passion for software engineering and economics.']}
                 multiTextDelay={1000}
-                typeSpeed={25}
+                typeSpeed={29}
             />
             </span>
+
             </div>
         </div>
+
+        <nav ref = {navRef}><a style={{fontSize: '1.0rem'}}><Link to="/projects" className="proj-link">Click here to check out my work →</Link></a>
+            </nav>
         {/* <hr
         style={{
           background: 'white',
@@ -42,7 +52,7 @@ export default function About() {
             <div data-aos="fade-right" className="extra">
                 {/* <div className="fstart"> */}
                     <h1 className="croom">Outside of the Classroom</h1>
-                    <h1 className="moreinfo">You will find me playing pick-up basketball and soccer. I also love hiking and going on adventures in nature. Additionally, I enjoy learning about Financial topics (Stocks, Cryptocurrency, Investing in general).</h1>
+                    <h1 className="moreinfo">You will find me playing pick-up basketball and soccer. I also love hiking and going on adventures in nature. Additionally, I enjoy learning about financial topics (Stocks, Cryptocurrency, investing in general).</h1>
                     <br/><br/><br/><br/>
 
         

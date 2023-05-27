@@ -3,27 +3,211 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    z-index: -1;
 }
 
 .title-info{
+    animation: floatUp 2s forwards;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid grey;
+    margin-bottom: 5px;
+    margin-top:10px;
 }
 .title-info h1{
     flex-grow: 1; /* Add this line */
-    font-size: 3vw; /* Adjust the value as needed */
-    animation: floatUp 2s forwards;
+    font-size: 3.2vw; /* Adjust the value as needed */
     text-decoration: underline;
 }
 .title-info p{
     flex-grow: 1; /* Add this line */
-    font-size: 1vw; /* Adjust the value as needed */
-    animation: floatUp 2s forwards;
-    margin-bottom: 10px;
+    font-size: 1.5vw; /* Adjust the value as needed */
+    margin: 10px;
 }
+
+.education{
+    animation: floatUp 2s forwards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(248, 244, 236);
+    border-radius: 50px;
+    flex-grow: 1; /* Add this line */
+    font-size: 1.5vw; 
+    margin: 10px;
+    width: 100vw;
+
+}
+
+.education h2{
+    flex-grow: 1; /* Add this line */
+    font-size: 3.2vw; /* Adjust the value as needed */
+}
+
+.UF{
+    flex-grow: 1; /* Add this line */
+    font-size: 1.9vw; /* Adjust the value as needed */
+    margin: 10px;
+    font-weight: bold;
+}
+.gpa{
+    flex-grow: 1; /* Add this line */
+    font-size: 1.5vw; /* Adjust the value as needed */
+    font-weight: bold;
+}
+.school-info{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.minors{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.comp-sci{
+    flex-grow: 1; /* Add this line */
+    font-size: 1.5vw; /* Adjust the value as needed */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.work-experience{
+    animation: floatUp 2s forwards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100vw    ;
+    text-align: center;
+    background-color: rgb(248, 244, 236);
+    border-radius: 50px;
+    font-size: 1.1vw;
+}
+.work-title{
+    flex-grow: 1; /* Add this line */
+    font-size: 3.2vw;
+    margin-top: 20px; 
+}
+.company{
+    flex-grow: 1; /* Add this line */
+    font-size: 1.8vw; /* Adjust the value as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.job-title{
+    flex-grow: 1; /* Add this line */
+    font-size: 1.5vw; /* Adjust the value as needed */
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.emerge-list{
+    align-items: center;
+}
+.bot{
+    margin-bottom:20px;
+}
+ul {
+    padding: 0;
+    list-style-position: inside;
+  }
+  li {
+    margin-left: 0;
+    padding-left: 20px;
+    text-indent: -20px;
+  }
+
+  .skills{
+    animation: floatUp 2s forwards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(248, 244, 236);
+    border-radius: 50px;
+  }
+  .skills h2{
+    flex-grow: 1; /* Add this line */
+    font-size: 3.2vw;
+    margin-top: 20px; 
+  }
+  .software{
+    font-size: 1.6vw;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+.major-ones{
+    font-weight:bold;
+}
+.coursework{
+    animation: floatUp 2s forwards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(248, 244, 236);
+    border-radius: 50px;
+    font-size: 1.4vw;
+  }
+  .coursework h2{
+    flex-grow: 1; /* Add this line */
+    font-size: 3.2vw;
+    margin-top: 20px; 
+  }
+  .classes{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+.comp-class{
+    font-weight:bold;
+}
+.DSA{
+    font-weight:bold;
+}
+.organizations{
+    animation: floatUp 2s forwards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(248, 244, 236);
+    border-radius: 50px;
+    font-size: 1.1vw;
+
+  }
+  .organizations h2{
+    flex-grow: 1; /* Add this line */
+    font-size: 3.2vw;
+    margin-top: 20px; 
+  }
+  .org-name{
+    flex-grow: 1; /* Add this line */
+    font-size: 1.8vw; /* Adjust the value as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .org-job{
+    font-size:1.2vw;
+    font-style:italic;
+    margin-bottom:10px;
+  }

@@ -3,16 +3,17 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+    z-index: -1;
 }
 .title{
     flex-grow: 1; /* Add this line */
     font-size: 7vw; /* Adjust the value as needed */
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     animation: floatUp 2s forwards;
 }
 .proj-ele-beg{
+    width: 60vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,10 +22,11 @@
     border:2px solid gray;
     margin-left: 150px;
     margin-right: 150px;
-    margin-top: 30px;
+    margin-top: 10px;
     animation: floatUp 2s forwards;
 }
 .proj-ele{
+    width: 60vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,9 +41,8 @@
     margin-bottom: 20px;
     margin-left: 60px;
     margin-right: 60px;
-    font-weight: bold;
     color:rgb(46, 33, 33);
-    font-size: 2.5vh;
+    font-size: 2.2vw;
 }
 .proj_title{
     transition: color 0.2s, transform 0.4s;

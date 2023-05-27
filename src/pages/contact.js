@@ -1,5 +1,6 @@
 import React from "react"
 import "./page_styles/contact.css"
+import fam from '../images/more-grad.JPG'
 import {FaBars, FaTimes, FaLinkedin, FaGithub, FaPhoneAlt} from "react-icons/fa";
 import { CiMail } from "react-icons/ci"
 
@@ -40,8 +41,10 @@ export default function Contact() {
             //     <p className="link-ele-git">https://github.com/jesse0980</p>
             // </div> */}
                 <h5 className="thanks">Thanks for checking out my page!</h5>
-                <img className = "final" src={require('../images/more-grad.JPG')} alt="Headshot" />
+                <img className = "final" src={fam} alt="Headshot" />
         </div>
 
     )
 }
+
+// require('../images/more-grad.JPG')

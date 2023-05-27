@@ -3,8 +3,7 @@
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
-  
+	font-family: "Titillium Web", sans-serif; 
 }
 :root{
     --mainColor: #29335c;
@@ -12,7 +11,7 @@
 	--secondaryColor: #db2b39;
 	--textColor: #eee;
 }
-header{
+.naV-BAR{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +19,8 @@ header{
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
-  z-index: 10;
+    width: 100vw;
+    
 }
 .link {
     margin: 0 1rem;
@@ -60,7 +60,64 @@ nav {
 }
 
 @media only screen and (max-width: 1024px) {
-    header .nav-btn {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1; /* Adjusted z-index to make the button clickable */
+  }
+
+  header nav {
+    position: fixed;
+    top: 0; /* Adjusted to cover the entire viewport */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    opacity: 0;
+    z-index: 1; /* Adjusted z-index to make the navbar cover other elements */
+  }
+
+  header .responsive_nav {
+    transform: translateY(0); /* Adjusted to slide down the navbar */
+    opacity: 1;
+  }
+
+  header .responsive_nav ~ .nav-btn {
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  @media only screen and (max-width: 700px) {
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .link {
+      font-size: .5rem;
+    }
+  }
+  .link {
+    font-size: 1.5rem;
+  }
+    /* header .nav-btn {
       visibility: visible;
       opacity: 1;
       position: absolute;
@@ -70,7 +127,7 @@ nav {
   
     header nav {
       position: fixed;
-      top: 0;
+      top: -100vh;
       left: 0;
       height: 100%;
       width: 100%;
@@ -80,14 +137,11 @@ nav {
       gap: 1.5rem;
       background-color: var(--mainColor);
       transition: 1s;
-      transform: translateY(-100%);
-      visibility: hidden;
       opacity: 0;
     }
   
     header .responsive_nav {
-      transform: translateY(0);
-      visibility: visible;
+      transform: translateY(100vh);
       opacity: 1;
     }
     header .responsive_nav ~ .nav-btn {
@@ -104,5 +158,5 @@ nav {
   
     .link {
       font-size: 1.5rem;
-    }
+    } */
   }

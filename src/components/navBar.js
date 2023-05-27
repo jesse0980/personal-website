@@ -13,9 +13,10 @@ function Navbar() {
   }
 
   return (
-    <header >
+    <header className="naV-BAR">
       {/* <a target="_blank" href="https://www.linkedin.com/in/jesse-landis-b9aa4818a/"><button  className="logo"><FaLinkedin size={35}/></button></a> */}
       <nav ref = {navRef}>
+        <div className="links-container">
             <a onClick={showNav}><Link to="/" className="link">Jesse Landis</Link></a>
             <a style={{fontSize: '1.7rem'}}>|</a>
             <a onClick={showNav}><Link to="/projects" className="link">Projects</Link></a>
@@ -24,6 +25,7 @@ function Navbar() {
             <a style={{fontSize: '1.7rem'}}>|</a>
             <a onClick={showNav}><Link to="/resume" className="link">Resume</Link></a>
             <button className="nav-btn nav-close-btn" onClick={showNav}><FaTimes/></button>
+        </div>
       </nav>
       <button className="nav-btn" onClick={showNav}><FaBars/></button>
     </header>

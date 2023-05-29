@@ -16,7 +16,7 @@ export default function About() {
     useEffect(() => {
       AOS.init({ duration: 2500 });
   
-      const images = [headshot, soccer];
+      const images = [headshot, soccer, grad];
       let loadedCount = 0;
   
       const checkAllImagesLoaded = () => {
@@ -83,9 +83,9 @@ export default function About() {
         </div>
 
         <div className="goal-align">
-            <div data-aos="flip-up"><img  className = "grad" src={grad} alt="Headshot" /></div>
+            <div data-aos="fade-up"><img  className = "grad" src={grad} alt="Headshot" /></div>
 
-            <div data-aos="flip-up" className="mygoals">
+            <div data-aos="fade-up" className="mygoals">
                     <h1 className="goals">My Goals</h1>
                     <h1 className="moreinfo">My current career goal is to find a full time software engineering position. Ideally this would be at a company that allowed me to also explore my love for economics.</h1>
             </div>

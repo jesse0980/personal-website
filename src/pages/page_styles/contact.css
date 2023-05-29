@@ -110,6 +110,21 @@
         margin-top: 20px;
     }
   }
+  @media (max-width: 500px) {
+    .final {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        max-width: 35%;
+        height: auto;
+        width: 100%; /* Set image width to 100% */
+        opacity: 0;
+        animation: floatUp 4s forwards;
+        flex: 0 0 30%;
+        padding: 0px;
+        z-index: -1;
+      }
+
+  }
 /* .link-ele-linked{
     flex-grow: 1; /* Add this line 
     font-size: 1vw;

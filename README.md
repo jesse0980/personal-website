@@ -1,3 +1,12 @@
+# Personal Website
+
+I built a personal website to display my web development skills and to showcase my porrtfolio. 
+
+Utilized the typewriter effect from https://github.com/kevoese/react-typewriter-effect
+
+Also used animations from data-AOS: https://michalsnik.github.io/aos/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import "./page_styles/about.css"
 import TypeWriterEffect from 'react-typewriter-effect';
 import AOS from 'aos'
@@ -10,12 +10,34 @@ import soccer from '../images/jesse-soccer.JPG'
 import grad from '../images/grad-photo.JPG'
 
 export default function About() {
-    useEffect(() => {
-        AOS.init({duration: 2500});
-        },
-    []);
-
     const navRef = useRef();
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {
+      AOS.init({ duration: 2500 });
+  
+      const images = [headshot, soccer];
+      let loadedCount = 0;
+  
+      const checkAllImagesLoaded = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setImagesLoaded(true);
+        }
+      };
+  
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+        img.onload = checkAllImagesLoaded;
+      });
+    }, []);
+  
+    // Render a loading state or the content based on the imagesLoaded state
+    if (!imagesLoaded) {
+      return <h1>Loading...</h1>; // Replace this with your desired loading state
+    }
+    
 
 
     return (
@@ -35,7 +57,7 @@ export default function About() {
                     cursorColor="#ffff"
                     multiText={['I am a University of Florida graduate who has expertise in C++, Python, SQL, React, and R. I have a passion for software engineering and economics.']}
                     multiTextDelay={1000}
-                    typeSpeed={29}
+                    typeSpeed={25}
                 />
                 </span>
                 <div className="nav-container">
@@ -51,13 +73,13 @@ export default function About() {
         
 
         <div className="croom-align">
-                <div data-aos="flip-up" className="extra">
+                <div data-aos="fade-right" className="extra">
                        <h1 className="croom">Outside of the Classroom</h1>
                         <h1 className="moreinfo">You will find me playing pick-up basketball and soccer. I also love hiking and going on adventures in nature. Additionally, I enjoy learning about financial topics (Stocks, Cryptocurrency, investing in general).</h1>
                 </div>
 
 
-                <div data-aos="flip-up"><img  className = "nature" src={soccer} alt="Headshot" /></div>
+                <div data-aos="fade-left"><img  className = "nature" src={soccer} alt="Headshot" /></div>
         </div>
 
         <div className="goal-align">

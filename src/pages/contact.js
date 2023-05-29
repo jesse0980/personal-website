@@ -1,10 +1,36 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import "./page_styles/contact.css"
 import fam from '../images/more-grad.JPG'
 import {FaBars, FaTimes, FaLinkedin, FaGithub, FaPhoneAlt} from "react-icons/fa";
 import { CiMail } from "react-icons/ci"
 
 export default function Contact() {
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {  
+      const images = [fam];
+      let loadedCount = 0;
+  
+      const checkAllImagesLoaded = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setImagesLoaded(true);
+        }
+      };
+  
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+        img.onload = checkAllImagesLoaded;
+      });
+    }, []);
+  
+    // Render a loading state or the content based on the imagesLoaded state
+    if (!imagesLoaded) {
+      return <h1>Loading...</h1>; // Replace this with your desired loading state
+    }
+
+
     return (
         <div className="contact">
             <h2 className="contact-title">Contact</h2>

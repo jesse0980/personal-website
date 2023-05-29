@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import "./page_styles/projects.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -9,17 +9,41 @@ import fbi from '../images/fbi.png'
 import smartEats from '../images/SmartEats1.png'
 
 export default function Project() {
+
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
     useEffect(() => {
-        AOS.init({duration: 2500});
-        },
-    []);
+      AOS.init({ duration: 2500 });
+  
+      const images = [peopleMap, memeGen];
+      let loadedCount = 0;
+  
+      const checkAllImagesLoaded = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setImagesLoaded(true);
+        }
+      };
+  
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+        img.onload = checkAllImagesLoaded;
+      });
+    }, []);
+  
+    // Render a loading state or the content based on the imagesLoaded state
+    if (!imagesLoaded) {
+      return <h1>Loading...</h1>; // Replace this with your desired loading state
+    }
+    
 
     return (
         <div className="projects">
            <h1 className="title">Projects</h1>
             <div className="proj-ele-beg">
             <a target="_blank" href="https://remarkable-salmiakki-a011fc.netlify.app/"><h3 className="proj_title">Peoples Map</h3></a>
-                <p className="proj_desc">Used React, Firebase, and the Google Maps API to create an Interactive Map that allows anyone to add their own places. Goal is to create a community map that has local things to do that you wouldn't find in a simple Google Search.</p>
+                <p className="proj_desc">Utilized React, Firebase, and the Google Maps API to create an Interactive Map that allows anyone to add their own places. Goal is to create a community map that has local things to do that you wouldn't find in a simple Google Search.</p>
                 <a target="_blank" href="https://remarkable-salmiakki-a011fc.netlify.app/"><img className = "proj" src={peopleMap} alt="Headshot" /></a>
             </div>
 
@@ -30,7 +54,7 @@ export default function Project() {
             </div>
             <div data-aos="fade-up" className="proj-ele">
             <a target="_blank" href="https://github.com/jesse0980/Sentimnent-Reader"><h3 className="proj_title">Sentiment Reader</h3></a>
-                <p className="proj_desc">Used SNS Scrape python module to create an application that scrapes posts(Twitter/Reddit) containing a key word such as “Bitcoin”. It then uses Vader Sentiment AI to analyze sentiment of posts and recommend buying/selling the asset</p>
+                <p className="proj_desc">Used SNS Scrape python module to create an application that scrapes posts(Twitter/Reddit) containing a key word such as “Bitcoin”. It then deploys Vader Sentiment AI to analyze sentiment of posts and recommend buying/selling the asset</p>
                 <a target="_blank" href="https://github.com/jesse0980/Sentimnent-Reader"><img className = "proj" src={sentRead} alt="Headshot" /></a>
             </div>
 

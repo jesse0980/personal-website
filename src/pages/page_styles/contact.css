@@ -91,6 +91,25 @@
       transform: translateY(0);
     }
   }
+  @media (max-width: 768px) {
+    .pic-ele {
+        animation: floatUp 3s forwards;
+        margin-top: 20PX;
+        display: flex;
+        width: 95vw;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .con{
+        margin-top:30px;
+    }
+    .final{
+        max-width: 50%;
+        margin-top: 20px;
+    }
+  }
 /* .link-ele-linked{
     flex-grow: 1; /* Add this line 
     font-size: 1vw;

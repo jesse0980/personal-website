@@ -117,46 +117,5 @@ nav {
   .link {
     font-size: 1.5rem;
   }
-    /* header .nav-btn {
-      visibility: visible;
-      opacity: 1;
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-    }
-  
-    header nav {
-      position: fixed;
-      top: -100vh;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      background-color: var(--mainColor);
-      transition: 1s;
-      opacity: 0;
-    }
-  
-    header .responsive_nav {
-      transform: translateY(100vh);
-      opacity: 1;
-    }
-    header .responsive_nav ~ .nav-btn {
-      transition: 1s;
-      visibility: hidden;
-      opacity: 0;
-    }
-  
-    nav .nav-close-btn {
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-    }
-  
-    .link {
-      font-size: 1.5rem;
-    } */
-  }
+
+}

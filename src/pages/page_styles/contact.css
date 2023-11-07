@@ -30,10 +30,10 @@
     font-size: 3vw; /* Adjust the value as needed */
     margin-top: 70px;
     margin-bottom: 0px;
-    animation: floatUp 4s forwards;
+    animation: floatUp 2s forwards;
 }
 .pic-ele {
-    animation: floatUp 3s forwards;
+    animation: floatUp 2s forwards;
     margin-top: 20PX;
     display: flex;
     width: 95vw;
@@ -41,6 +41,17 @@
     flex-direction: row;
     justify-content: space-around;
     
+}
+.loadBox{
+    display: flex;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    align-items: center; 
+  
+    justify-content: center; 
+  
+    text-align: center; 
 }
  .con-logo{
     cursor: pointer;
@@ -75,7 +86,7 @@
     height: auto;
     width:auto;
     opacity: 0;
-    animation: floatUp 4s forwards;
+    animation: floatUp 2s forwards;
     flex: 0 0 30%;
     padding: 0px;
     z-index: -1;
@@ -93,7 +104,7 @@
   }
   @media (max-width: 768px) {
     .pic-ele {
-        animation: floatUp 3s forwards;
+        animation: floatUp 2s forwards;
         margin-top: 20PX;
         display: flex;
         width: 95vw;
@@ -118,7 +129,7 @@
         height: auto;
         width: 100%; /* Set image width to 100% */
         opacity: 0;
-        animation: floatUp 4s forwards;
+        animation: floatUp 2s forwards;
         flex: 0 0 30%;
         padding: 0px;
         z-index: -1;

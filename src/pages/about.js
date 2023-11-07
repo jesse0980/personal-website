@@ -35,7 +35,11 @@ export default function About() {
   
     // Render a loading state or the content based on the imagesLoaded state
     if (!imagesLoaded) {
-      return <h1>Loading...</h1>; // Replace this with your desired loading state
+      return(
+        <div className="loadBox">
+        <h1 className="loadScreen">Loading...</h1>; 
+        </div>
+        )
     }
     
 
@@ -51,13 +55,13 @@ export default function About() {
                 <span className="type-write"><TypeWriterEffect
                     textStyle={{fontFamily: "Red Hat Display",
                                 fontWeight: 500,
-                                fontSize: "2em",
+                                fontSize: "1.4em",
                     }}
                     startDelay={1500}
                     cursorColor="#ffff"
                     multiText={['I am a University of Florida graduate who has expertise in C++, Python, SQL, React, and R. I have a passion for software engineering and economics.']}
                     multiTextDelay={1000}
-                    typeSpeed={25}
+                    typeSpeed={20}
                 />
                 </span>
                 <div className="nav-container">

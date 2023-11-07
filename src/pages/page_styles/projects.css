@@ -5,17 +5,28 @@
     justify-content: center;
     z-index: -1;
   }
+  .loadBox{
+    display: flex;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    align-items: center; 
+  
+    justify-content: center; 
+  
+    text-align: center; 
+}
   
   .title {
     flex-grow: 1;
     font-size: 7vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    animation: floatUp 2s forwards;
+    animation: floatUp 1s forwards;
   }
   
   .proj-ele-beg{    
-    animation: floatUp 2s forwards;
+    animation: floatUp 1s forwards;
     width: 60vw;
     display: flex;
     align-items: center;

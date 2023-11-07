@@ -27,7 +27,10 @@ export default function Contact() {
   
     // Render a loading state or the content based on the imagesLoaded state
     if (!imagesLoaded) {
-      return <h1>Loading...</h1>; // Replace this with your desired loading state
+      return (
+              <div className="loadBox">
+                <h1 className="loadScreen">Loading...</h1>; 
+              </div>)
     }
 
 

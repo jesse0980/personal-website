@@ -3,7 +3,17 @@
 * {
   font-family: 'Abhaya Libre', serif;
 }
+.loadBox{
+  display: flex;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  align-items: center; 
 
+  justify-content: center; 
+
+  text-align: center; 
+}
 .container {
   flex-direction: row;
   display: flex;
@@ -188,6 +198,31 @@
     padding-right: 20px;
     width:100vw;
   }
+  .croom-align {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vh;
+    margin-bottom: 0px;
+    margin-left:0vh;
+  }
+  .extra {
+    display: flex;
+    margin-left: 0px;
+    width: 70vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    z-index: -1;
+    background-color: whitesmoke;
+  }
+  .nature {
+    width: 70vw;
+    margin-left: 15vw;
+
+    border-radius: 50%;
+  }
   .headshot {
     max-width: 60%;
     clip-path: circle();
@@ -210,6 +245,7 @@
   }
   .goal-align {
     margin-top: 30px;
+    margin-left:3vh;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -218,7 +254,12 @@
     margin-bottom: 15px;
   }
   .type-write{
+    margin-top: 2vh;
     width: 90vw;
+  }
+  .nav-container{
+    margin-top: 5vh;
+    margin-bottom:10vh;
   }
 
 }
@@ -228,6 +269,7 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 5vh;
     width:100vw;
   }
   .headshot {
@@ -253,7 +295,7 @@
     padding-right: 100px;
   }
   .goal-align {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -261,9 +303,22 @@
     gap: 40px;
     margin-bottom: 15px;
   }
+  .croom-align {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 5px;
+  }
   .type-write{
-    width: 90vw;
-    height: 40vh;
+    width: 80vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:0vh;
   }
 
   .moreinfo {
@@ -275,5 +330,15 @@
     padding-top: 20px;
     align-self: flex-start;
     margin-bottom: 30px;
+  }
+  .this-title{
+    margin-left: 9vw;
+    font-size: 10vw;
+
+  }
+  .nav-container{
+    margin-top: 0vh;
+    margin-left: 16vw;
+    margin-bottom:6vh;
   }
 }

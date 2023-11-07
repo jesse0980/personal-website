@@ -1,3 +1,19 @@
+# Personal Website
+
+Deployed here: https://jesselandis.info/
+
+
+I built a personal website to display my web development skills and to showcase my porrtfolio. Created with React JS, HTML, CSS, and the following technologies:
+
+Utilized the typewriter effect from https://github.com/kevoese/react-typewriter-effect
+
+Also used animations from data-AOS: https://michalsnik.github.io/aos/
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -55,7 +55,7 @@ export default function About() {
                 <span className="type-write"><TypeWriterEffect
                     textStyle={{fontFamily: "Red Hat Display",
                                 fontWeight: 500,
-                                fontSize: "1.4em",
+                                fontSize: "1.6em",
                     }}
                     startDelay={1500}
                     cursorColor="#ffff"

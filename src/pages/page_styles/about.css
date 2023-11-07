@@ -34,6 +34,7 @@
 .proj-link {
   animation: floatUp 2s 1s forwards;
   opacity: 0;
+  font-weight: bolder;
   color: black;
 }
 

@@ -1,5 +1,8 @@
 import React from 'react';
 import "./page_styles/resume.css"
+import Footer from "../components/footer";
+
+
 const Resume = () => {
   return (
     <div className="Res">
@@ -45,22 +48,6 @@ const Resume = () => {
         <p>Economics: Econometrics using R, Business Analytics using Machine Learning, Statistical Programming with R</p>       
 
       </div>
-      {/* <h2>PROJECTS</h2>
-      <p>Minesweeper</p>
-      <ul>
-        <li>Built the classic Minesweeper game using C++, more specifically the SFML library.</li>
-        <li>Involved using concepts such as inheritance, recursion, and polymorphism.</li>
-      </ul>
-
-      <p>Facial Recognition Software</p>
-      <ul>
-        <li>Used NumPy, Pandas, and Scikit-learn to train and create an algorithm that could recognize faces in a digital photo based off pixel data.</li>
-      </ul>
-
-      <p>Personal Website</p>
-      <ul>
-        <li>Developed own personal website using CSS, HTML, JavaScript, and the Flask module from Python.</li>
-      </ul> */}
       <div className='organizations'>
         <h2>ORGANIZATIONS</h2>
         <p className='org-name'>Seventh Generation Environmental Club</p>
@@ -84,6 +71,10 @@ const Resume = () => {
           <li>Participated in weekly discussions/debates regarding a wide range of Economic topics.</li>
         </ul>
       </div>
+
+    
+    <Footer/>
+
     </div>
   );
 };

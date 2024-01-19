@@ -3,6 +3,7 @@ import "./page_styles/contact.css"
 import fam from '../images/more-grad.JPG'
 import {FaBars, FaTimes, FaLinkedin, FaGithub, FaPhoneAlt} from "react-icons/fa";
 import { CiMail } from "react-icons/ci"
+import Footer from "../components/footer";
 
 export default function Contact() {
     const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -58,6 +59,8 @@ export default function Contact() {
             </div>
                 <h5 className="thanks">Thanks for checking out my page!</h5>
                 <img className = "final" src={fam} alt="Headshot" />
+          <Footer/>
+
         </div>
 
     )

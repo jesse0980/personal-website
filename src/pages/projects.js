@@ -7,6 +7,7 @@ import memeGen from '../images/meme.png'
 import sentRead from '../images/sentiment-reader.png'
 import fbi from '../images/fbi.png'
 import chess from '../images/ChessAI.png'
+import Footer from "../components/footer";
 
 export default function Project() {
 
@@ -71,7 +72,9 @@ export default function Project() {
                   <p className="proj_desc">Developed web application that allowed users to visualize/analyze 500,000 FBI crime data points. Utilized the Oracle SQL developer, HTML, PHP, and CSS to create a seamless user experience</p>
                   <a target="_blank" href="https://github.com/jesse0980/FBI-Crime-Website"><img className = "proj" src={fbi} alt="Headshot" /></a>
             </div>
-           
+        
+        <Footer/>
+
         </div>
 
     )

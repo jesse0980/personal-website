@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import headshot from '../images/headshot.jpg'
 import soccer from '../images/jesse-soccer.JPG'
 import grad from '../images/grad-photo.JPG'
+import Footer from "../components/footer";
+
 
 export default function About() {
     const navRef = useRef();
@@ -94,7 +96,8 @@ export default function About() {
                     <h1 className="moreinfo">My current career goal is to find a full time software engineering position. Ideally this would be at a company that allowed me to also explore my love for economics.</h1>
             </div>
         </div>
-        
+        <Footer/>
+
         </div>
     )
 }
